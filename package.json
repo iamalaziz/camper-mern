@@ -1,37 +1,48 @@
 {
-  "name": "camper-mern",
-  "version": "1.0.0",
-  "description": "Camper Platform for Car Rental",
-  "main": "server.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server",
-    "server": "nodemon backend/server",
-    "client": "npm run dev --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamalaziz/camper-mern.git"
-  },
-  "author": "Mashrabov Abdulaziz",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iamalaziz/camper-mern/issues"
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "colors": "^1.4.0",
-    "concurrently": "^8.2.2",
-    "dotenv": "^16.4.5",
-    "express": "^4.18.2",
-    "express-async-handler": "^1.2.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.2.0",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.0"
-  }
+    "name": "camper-mern",
+    "version": "1.0.0",
+    "description": "Camper Platform for Car Rental",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node backend/server",
+        "server": "nodemon backend/server",
+        "client": "npm run dev --prefix frontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "data:import": "node backend/seeder",
+        "data:destroy": "node backend/seeder -d"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iamalaziz/camper-mern.git"
+    },
+    "author": "Mashrabov Abdulaziz",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/iamalaziz/camper-mern/issues"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "colors": "^1.4.0",
+        "concurrently": "^8.2.2",
+        "dotenv": "^16.4.5",
+        "express": "^4.18.2",
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.2.0",
+        "morgan": "^1.10.0",
+        "nodemon": "^3.1.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^7.1.0",
+        "@typescript-eslint/parser": "^7.1.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-import-resolver-typescript": "^3.6.1",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-react": "^7.33.2",
+        "prettier": "^3.2.5"
+    }
 }
